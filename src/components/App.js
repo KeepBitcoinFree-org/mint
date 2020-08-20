@@ -190,15 +190,15 @@ const App = () => {
             }
           >
             <div className="logo">
-              <img src={logo} alt="Bitcoin.com Mint" />
+              <img src={logo} alt="SOURmint | wallet.sourtoken.cash" />
             </div>
             <div
               style={{
                 background: "rgba(0, 0, 0, 0.5)",
                 width: "100%",
                 height: "1px",
-                marginBottom: "26px",
-                marginTop: "19px"
+                marginBottom: "12px",
+                marginTop: "12px"
               }}
             />
             <Menu
@@ -236,34 +236,34 @@ const App = () => {
                   <Link to="/audit">Audit</Link>
                 </Menu.Item>
                 <Menu.SubMenu key="links" title={<span>Links</span>}>
+                  <Menu.Item key="link-sour">
+                    {" "}
+                    <a href="https://sourtoken.cash" target="_blank" rel="noopener noreferrer">
+                      SOUR Token
+                    </a>
+                  </Menu.Item>
+
+                  <Menu.Item key="link-sour-faucet">
+                    {" "}
+                    <a href="http://sour-faucet.ddns.net" target="_blank" rel="noopener noreferrer">
+                      SOUR Faucet
+                    </a>
+                  </Menu.Item>
+
+                  <Menu.Item key="link-donate4sour">
+                    {" "}
+                    <a
+                      href="https://donate.sourtoken.cash"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      #Donate4SOUR
+                    </a>
+                  </Menu.Item>
+
                   <Menu.Item key="link-faucet">
                     <a href="https://free.bitcoin.com/" target="_blank" rel="noopener noreferrer">
                       Faucet (Free BCH)
-                    </a>
-                  </Menu.Item>
-                  <Menu.Item key="link-exchange">
-                    <a
-                      href="https://exchange.bitcoin.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Exchange
-                    </a>
-                  </Menu.Item>
-                  <Menu.Item key="link-games">
-                    {" "}
-                    <a
-                      href="https://cashgames.bitcoin.com/home"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Games
-                    </a>
-                  </Menu.Item>
-                  <Menu.Item key="link-trade-locally">
-                    {" "}
-                    <a href="https://local.bitcoin.com" target="_blank" rel="noopener noreferrer">
-                      Trade Locally
                     </a>
                   </Menu.Item>
                 </Menu.SubMenu>
