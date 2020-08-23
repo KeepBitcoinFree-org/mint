@@ -190,7 +190,7 @@ const App = () => {
             }
           >
             <div className="logo">
-              <img src={logo} alt="SOURmint | wallet.sourtoken.cash" />
+              <img src={logo} alt="SOURmint | wallet.sourtoken.cash" style={{ width: "320px" }} />
             </div>
             <div
               style={{
@@ -250,6 +250,13 @@ const App = () => {
                     </a>
                   </Menu.Item>
 
+                  <Menu.Item key="link-sour-shop">
+                    {" "}
+                    <a href="https://shop.sourtoken.cash" target="_blank" rel="noopener noreferrer">
+                      Spend SOUR
+                    </a>
+                  </Menu.Item>
+
                   <Menu.Item key="link-donate4sour">
                     {" "}
                     <a
@@ -263,7 +270,7 @@ const App = () => {
 
                   <Menu.Item key="link-faucet">
                     <a href="https://free.bitcoin.com/" target="_blank" rel="noopener noreferrer">
-                      Faucet (Free BCH)
+                      BCH Faucet (Bitcoin.com)
                     </a>
                   </Menu.Item>
                 </Menu.SubMenu>

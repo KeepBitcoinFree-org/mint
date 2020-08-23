@@ -418,7 +418,7 @@ const Create = () => {
     const { tokenName, tokenSymbol, documentUri, amount, decimals, fixedSupply } = data;
 
     try {
-      const docUri = documentUri || "mint.bitcoin.com";
+      const docUri = documentUri || "wallet.sourtoken.cash";
       const link = await createToken(wallet, {
         name: tokenName,
         symbol: tokenSymbol,
@@ -963,7 +963,7 @@ const Create = () => {
 
                         <Form.Item>
                           <Input
-                            placeholder="token website e.g.: developer.bitcoin.com"
+                            placeholder="token website e.g.: wallet.sourtoken.cash"
                             name="documentUri"
                             onChange={e => handleChange(e)}
                             required
