@@ -7,7 +7,7 @@ export default () => {
   return (
     <StyledAudit>
       <Row justify="center" type="flex">
-        <Col lg={8} span={24}>
+        <Col lg={10} span={24}>
           <Card
             className="audit"
             title={
@@ -19,34 +19,35 @@ export default () => {
           >
             <Title level={4}>Never trust, always verify.</Title>
             <Text>
-              Check the open source code{" "}
               <a
-                href="https://github.com/Bitcoin-com/mint"
+                href="https://github.com/KeepBitcoinFree-org/mint"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                here
+                Check the open source code here.
               </a>
-              .
+              <br />
             </Text>
             <br />
-            <Text>Check and/or change the REST API in Configure. </Text>
+            <a href="http://localhost:3000/#/configure" rel="noopener noreferrer">
+              <Text>Check and/or change the REST API in Configure.</Text>
+            </a>
+            <br />
             <br />
             <Text>
-              Install, build and run Bitcoin.com Mint{" "}
               <a
-                href="https://github.com/Bitcoin-com/mint#running-locally"
+                href="https://github.com/KeepBitcoinFree-org/mint#running-locally"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                locally
+                Install, build and run SOURmint.cash locally.
               </a>
-              .{" "}
+              <br />{" "}
             </Text>
             <br />
             <Text>
               Join our{" "}
-              <a href="https://t.me/piticocash" rel="noopener noreferrer" target="_blank">
+              <a href="https://t.me/sourtoken" rel="noopener noreferrer" target="_blank">
                 public telegram group
               </a>
               .

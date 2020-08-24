@@ -211,31 +211,16 @@ const App = () => {
                 <Menu.Item key="portfolio">
                   <Link to="/portfolio">Portfolio</Link>
                 </Menu.Item>
-                {wallet && (
-                  <Menu.Item key="create">
-                    <Link to="/create">Create</Link>
-                  </Menu.Item>
-                )}
-                <Menu.Item key="icons">
-                  <Link to="/icons">Icons</Link>
-                </Menu.Item>
-                {wallet && (
-                  <Menu.SubMenu key="dividends" title={<span>Dividends</span>}>
-                    <Menu.Item key="pay-dividends">
-                      <Link to="/pay-dividends">Pay Dividends</Link>
-                    </Menu.Item>
-                    <Menu.Item key="dividends-history">
-                      <Link to="/dividends-history">Dividends History</Link>
-                    </Menu.Item>
-                  </Menu.SubMenu>
-                )}
+
                 <Menu.Item key="configure">
                   <Link to="/configure">Configure</Link>
                 </Menu.Item>
+
                 <Menu.Item key="audit">
                   <Link to="/audit">Audit</Link>
                 </Menu.Item>
-                <Menu.SubMenu key="links" title={<span>Links</span>}>
+
+                <Menu.SubMenu key="links" title={<span>SOUR</span>}>
                   <Menu.Item key="link-sour">
                     {" "}
                     <a href="https://sourtoken.cash" target="_blank" rel="noopener noreferrer">
@@ -274,6 +259,27 @@ const App = () => {
                     </a>
                   </Menu.Item>
                 </Menu.SubMenu>
+
+                {wallet && (
+                  <Menu.SubMenu key="other" title={<span>Mint</span>}>
+                    <Menu.Item key="create">
+                      <Link to="/create">Create</Link>
+                    </Menu.Item>
+
+                    <Menu.Item key="icons">
+                      <Link to="/icons">Icons</Link>
+                    </Menu.Item>
+
+                    <Menu.SubMenu key="dividends" title={<span>Dividends</span>}>
+                      <Menu.Item key="pay-dividends">
+                        <Link to="/pay-dividends">Pay Dividends</Link>
+                      </Menu.Item>
+                      <Menu.Item key="dividends-history">
+                        <Link to="/dividends-history">Dividends History</Link>
+                      </Menu.Item>
+                    </Menu.SubMenu>
+                  </Menu.SubMenu>
+                )}
               </Menu.ItemGroup>
 
               {wallet ? (
