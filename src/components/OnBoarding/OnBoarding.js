@@ -197,9 +197,9 @@ export const OnBoarding = ({ history }) => {
           >
             <div style={{}}>
               <p>
-                Bitcoin.com Mint is an{" "}
+                SOURMint is an{" "}
                 <a
-                  href="https://github.com/Bitcoin-com/mint/"
+                  href="https://github.com/KeepBitcoinFree-org/mint"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -210,7 +210,7 @@ export const OnBoarding = ({ history }) => {
               <p>
                 {" "}
                 Web wallets offer user convenience, but storing large amounts of money on a web
-                wallet is not recommended.
+                wallet is not recommended. For a more secure version, download and run offline.
               </p>
               <p>Creating your own SLP tokens only costs a few cents worth of BCH.</p>
             </div>
